@@ -9,11 +9,15 @@ class Todo extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'user_id', 'is_complete'];
+    protected $table = 'todos'; // Pastikan ini sesuai dengan nama tabel di database
+
+    protected $fillable = ['title', 'user_id', 'is_done']; // Pastikan sesuai dengan kolom di database
 
     protected $casts = [
-        'is_complete' => 'boolean', // Agar nilai `is_complete` otomatis dikonversi ke boolean
+        'is_done' => 'boolean', // Konversi otomatis ke boolean
     ];
+
+    public $timestamps = true; // Jika ingin menggunakan `created_at` dan `updated_at`
 
     public function user()
     {
