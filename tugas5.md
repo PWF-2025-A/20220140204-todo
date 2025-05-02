@@ -1,5 +1,0 @@
-![alt text](screenshot/tugas5/1.png)
-![alt text](screenshot/tugas5/2.png)
-![alt text](screenshot/tugas5/3.png)
-![alt text](screenshot/tugas5/4.png)
-![alt text](screenshot/tugas5/5.png)
